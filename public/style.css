@@ -1,0 +1,88 @@
+.contatos{
+  float:left;
+}
+.mensagem {
+  float:left;
+}
+
+/* .oculto{
+
+    height:0;
+    width:0;
+    visibility: hidden;
+    padding:0;
+    margin:0;
+    float:right;
+
+} */
+/* 
+
+#contatos {
+    width: 20em;
+    height: 20em;
+    border: 2px inset gray;
+    margin-bottom: 1em;
+  }
+
+  textarea[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+#lbmensagem {
+    background-color: #3CBC8D;
+    color: white;
+    /* width: 350px;
+    /* height: 300px; 
+    padding: 4px;
+    top: 8%;
+    left: 23%;
+    align-items: center;
+    position: absolute;
+  }
+
+  #lbcontatos {
+    background-color: #000000;
+    color: rgb(251, 251, 251);
+    /* width: 350px; */
+    /* height: 300px;  
+    padding: 2px; 
+    top: 8%;
+    left: 01%;
+    align-items: center;
+    position: absolute;
+  }
+
+
+.mensagem  {
+  width: 350px;
+  height: 300px; 
+  padding: 10px; 
+  align-items: center;
+  border:4px dashed indigo;
+  background-color:aliceblue;
+  margin: 0;
+  background: white;
+  position: absolute;
+  top: 33%;
+  left: 35%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+/* .contatos  {
+  width: 350px;
+  height: 300px; 
+  padding: 10px; 
+  align-items: center;
+  border:4px dashed indigo;
+  background-color:aliceblue;
+  margin: 0;
+  background: white;
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+} */ 

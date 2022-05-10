@@ -1,0 +1,101 @@
+<head>
+
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<h1>Faça o seu disparo por aqui</h1>
+
+<body>
+     <!-- <div class="forme">
+        <input type="text" class="campo1" />
+        <input type="checkbox" />
+
+        <div class="contact left">
+          <input type="text" name="nome" autocomplete="name" placeholder="Nome" required>
+           <input type="text" name="empresa" autocomplete="organization" placeholder="Empresa"> 
+           <input type="text" name="telefone" autocomplete="tel-national" placeholder="Telefone" required>
+        </div>
+        <div class="contact right">
+          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+        </div>
+      </div>  -->
+
+    <form method="post"> 
+
+         <label id="lbcontatos" for="contatos">Colar contatos</label><br>
+        <textarea class="contatos" id="contatos" name="contatos" placeholder="Cole os seus contatos aqui"rows="20" cols="20"   ></textarea>
+
+        <label id="lbmensagem" for="mensagem">Mensagem</label><br>
+        <textarea class="mensagem" placeholder="Digite a mensagem a ser enviada aqui" id="mensagem" name="mensagem" rows="20"  cols="33"></textarea>
+
+
+        <input type="checkbox" name="enviarimagem" id="IDurlImagem" value="yes" onclick="Mudarestado('urlImagem')">
+        <label for="enviarimagem"> Enviar Imagem?</label><br> 
+        <input type="text" name="urlImagem" id="urlImagem" style="display:none;text-transform:uppercase" placeholder="Digite a URL da imagem"/>
+
+
+        <input type="checkbox" name="enviarVideo" id="IDImagem" value="yes" onclick="Mudarestado('urlVideo')">
+        <label for="enviarVideo"> Enviar Video?</label><br> 
+        <input type="text" name="urlVideo" id="urlVideo" style="display:none;text-transform:uppercase" placeholder="Digite a URL do Video"/>
+
+
+
+
+        <!-- <input type="checkbox" id="enviarvideo" name="enviarvideo" value="videotrue">
+        <label for="enviarvideo"> Enviar video?</label><br>
+        <input type="checkbox" id="somentetexto" name="somentetexto" value="somentetextotrue">
+        <label for="somentetexto"> Somente texto?</label><br> -->
+
+
+
+        <!-- <label for="cars">Choose a car:</label> -->
+        <!-- <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select> --> 
+
+          <div class="slider-wrapper">
+        <input name="intervalo" type="range" min="0" max="11" value="3" step="1">
+        </div> 
+
+          <!-- <input type="range" list="tickmarks"> --> 
+           <input type="submit" name="acao" value="Começar Disparo"/>
+
+
+
+<!-- <datalist id="tickmarks">
+  <option value="0" label="0%">
+  <option value="10">
+  <option value="20">
+  <option value="30">
+  <option value="40">
+  <option value="50" label="50%">
+  <option value="60">
+  <option value="70">
+  <option value="80">
+  <option value="90">
+  <option value="100" label="100%">
+</datalist> -->
+
+    </form> 
+
+    <script>
+    
+    $('[name="check"]').change(function() {
+  $('[name="op1"]').toggle(200);
+});
+function Mudarestado(el) {
+	var display = document.getElementById(el).style.display;
+	if(display == "none")
+		document.getElementById(el).style.display = 'block';
+	else
+		document.getElementById(el).style.display = 'none';
+}
+
+
+        </script>
+</body>
